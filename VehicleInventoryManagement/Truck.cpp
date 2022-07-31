@@ -12,6 +12,15 @@ Truck::Truck() {
 	towCap = 0;
 }
 
+// *******************************
+//      DISPLAY INFO FUNCTION
+// *******************************
+
+void Truck::displayInfo(Vehicle &truck) {
+	Vehicle::displayInfo(truck);
+	cout << "Towing capacity:  " << towCap << endl;
+}
+
 // ***********************
 //      SET FUNCTIONS
 // ***********************
