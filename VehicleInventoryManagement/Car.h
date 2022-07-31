@@ -5,7 +5,7 @@ class Car : protected Vehicle {
 		int numberDoors;
 	public:
 		Car();
-		void displayInfo(Vehicle&);
+		void displayInfo();
 		void setNumDoors(int);
 		int getNumDoors();
 };

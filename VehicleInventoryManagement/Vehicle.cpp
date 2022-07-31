@@ -15,7 +15,7 @@ Vehicle::Vehicle() {
 //      DISPLAY INFO FUNCTION
 // *******************************
 
-void Vehicle::displayInfo(Vehicle& vehicleRef) {
+void Vehicle::displayInfo() {
 	cout << "Vehicle Information: " << endl;
 	cout << "Manufacturer:        " << manufacturer << endl;
 	cout << "Year:                " << year << endl;

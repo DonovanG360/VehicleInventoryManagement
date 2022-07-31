@@ -16,8 +16,8 @@ Car::Car() {
 //      DISPLAY INFO FUNCTION
 // *******************************
 
-void Car::displayInfo(Vehicle& carName) {
-	Vehicle::displayInfo(carName);
+void Car::displayInfo() {
+	Vehicle::displayInfo();
 	cout << "Number of doors:   " << numberDoors << endl;
 }
 

@@ -14,5 +14,5 @@ public:
 	void setYear(int);
 	string getManufacturer();
 	int getYear();
-	virtual void displayInfo(Vehicle&);
+	virtual void displayInfo();
 };

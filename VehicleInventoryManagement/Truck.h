@@ -5,7 +5,7 @@ class Truck : protected Vehicle {
 		int towCap;
 	public:
 		Truck();
-		void displayInfo(Vehicle&);
+		void displayInfo();
 		void setTowCap(int);
 		int getTowCap();
 };
