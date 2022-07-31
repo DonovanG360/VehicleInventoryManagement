@@ -21,18 +21,32 @@ int main() {
 
 	cout << "\nVehicle:" << endl;
 	cout << "Enter the manufacturer: "; getline(cin, manufacturer);
-	cout << "Enter the year built: "; cin >> year;
 	coolVehicle.setManufacturer(manufacturer);
-	// input validation is included in the member function for year
+	cout << "Enter the year built: "; cin >> year;
+	// input validation is included in the member function setYear
 	coolVehicle.setYear(year);
 	coolVehicle.displayInfo();
 	
 	cout << "\nCar:" << endl;
+	cin.ignore(1, '\n');
 	cout << "Enter the manufacturer: "; getline(cin, manufacturer);
-	cout << "Enter the year built: "; cin >> year;
-	cout << "Enter the number of doors: "; cin >> doors;
 	coolCar.setManufacturer(manufacturer);
+	cout << "Enter the year built: "; cin >> year;
+	coolCar.setYear(year);
+	cout << "Enter the number of doors: "; cin >> doors;
+	// input validation is included in the member function setNumDoors
+	coolCar.setNumDoors(doors);
+	coolCar.displayInfo();
 
+	cout << "\nTruck:" << endl;
+	cin.ignore(1, '\n');
+	cout << "Enter the manufacturer: "; getline(cin, manufacturer);
+	coolTruck.setManufacturer(manufacturer);
+	cout << "Enter the year built: "; cin >> year;
+	coolTruck.setYear(year);
+	cout << "Enter the tow capacity: "; cin >> tow;
+	// input validation is included in the member function setTowCap
+	coolTruck.setTowCap(tow);
 
 	cout << "Thanks for using the program!";
 	cout << "\n\n";

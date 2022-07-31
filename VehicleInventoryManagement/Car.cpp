@@ -26,6 +26,16 @@ void Car::displayInfo() {
 // ***********************
 
 void Car::setNumDoors(int numDoors) {
+	// Input Validation
+	if (numDoors < 0) {
+		bool isValInput = false;
+		while (isValInput == false) {
+			cout << "Number of doors cannot be negative! Please enter a valid number of doors: "; cin >> numDoors;
+			if (numDoors >= 0) {
+				isValInput = true;
+			}
+		}
+	}
 	numberDoors = numDoors;
 }
 
