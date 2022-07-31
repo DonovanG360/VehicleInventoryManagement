@@ -1,6 +1,6 @@
 #pragma once
 #include "Vehicle.h"
-class Car : protected Vehicle {
+class Car : public Vehicle {
 	private:
 		int numberDoors;
 	public:
