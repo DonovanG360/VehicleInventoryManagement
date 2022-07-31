@@ -7,7 +7,8 @@
 // *********************
 
 Car::Car() {
-	Vehicle();
+	manufacturer = "";
+	year = 0000;
 	numberDoors = 0;
 }
 
